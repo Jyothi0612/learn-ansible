@@ -1,5 +1,5 @@
 - name: ping demo
-  hosts: localhost # target anisble
+  hosts: local # target anisble
   connection: local # It will not expect credentials
   tasks: # tasks = modules or collection
     - name: ping localhost
