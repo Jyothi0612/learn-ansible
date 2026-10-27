@@ -1,0 +1,24 @@
+{
+  "firstName": "SivaJyothi",
+  "lastName": "P",
+  "dob": "01-01-01",
+  "addresses": [
+    {
+      "type": "temporary",
+      "doorNo": "343-34",
+      "streetName": "JNTU",
+      "city": "Hyderabad"
+    },
+    {
+      "type": "permanent",
+      "doorNo": "343-34",
+      "streetName": "JNTU",
+      "city": "Hyderabad"
+    }
+  ],
+  "skills": {
+    "OS": "Linux",
+    "IDE": "VsCode",
+    "CM": "Ansible"
+  }
+}

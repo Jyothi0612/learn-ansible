@@ -1,0 +1,16 @@
+- first_name: SivaJyothi
+  last_name: P
+  dob: 01-01-01
+  addressess:
+    - type: permanent
+      door_no: 343-34
+      street_name: JNTU
+      city: Hyderabad
+    - type: temporary
+      door_no: 343-34
+      street_name: JNTU
+      city: Hyderabad
+  skills:
+    OS: Linux
+    IDE: VsCode
+    CM: Ansible

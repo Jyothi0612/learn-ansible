@@ -1,0 +1,17 @@
+<Student>
+    <firstName>SivaJyothi</firstName>
+    <lastName>P</lastName>
+    <dob>01-01-01</dob>
+    <addresses>
+        <address type="temporary">
+            <doorNo>343-34</doorNo>
+            <streetName>JNTU</streetName>
+            <city>Hyderabad</city>
+        </address>
+        <address type="permanent">
+            <doorNo>343-34</doorNo>
+            <streetName>JNTU</streetName>
+            <city>Hyderabad</city>
+        </address>
+    </addresses>
+</Student>
