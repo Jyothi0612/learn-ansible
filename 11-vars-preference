@@ -11,7 +11,7 @@
     - course.yaml
   tasks:
     - name: print course information
-      vars:
-        course: ansible from Task
+      #vars:
+      #  course: ansible from Task
       debug:
         msg: Hi, I am learning {{ course }}
