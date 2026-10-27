@@ -12,6 +12,6 @@
   tasks:
     - name: print course information
       vars:
-      course: ansible from Task
+        course: ansible from Task
       debug:
         msg: Hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}
