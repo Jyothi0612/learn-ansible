@@ -6,6 +6,7 @@
     names:
     - siva
     - jyothi
+    topic: ANSIBLE
   tasks:
     - name: print the name
       debug:
@@ -18,3 +19,7 @@
     - name: convert list to string
       debug:
         msg: "Full name: {{ names | join(' ') }}"
+
+    - name: covert to lowercase
+      debug:
+        msg: "Covert to lowercase {{ topic |  lower }}"
