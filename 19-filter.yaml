@@ -22,4 +22,4 @@
 
     - name: covert to lowercase
       debug:
-        msg: "Covert to lowercase {{ topic |  lower }}"
+        msg: "Topic: {{ topic |  lower }}"
