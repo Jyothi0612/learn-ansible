@@ -1,7 +1,7 @@
 - name: print multiplication table
   hosts: local
   connection: local
-  vars_promot:
+  vars_prompt:
     - name: number
       prompt: "Eneter a number"
       private: no
