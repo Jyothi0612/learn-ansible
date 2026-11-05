@@ -9,3 +9,4 @@
     - name: print multiplication table
       debug:
         msg: "{{ number }} * {{ item }} = {{ number | int * item | int }}"
+      loop: "{{ range(1, number | int + 1) }}"
