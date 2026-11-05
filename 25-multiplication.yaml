@@ -3,10 +3,18 @@
   connection: local
   vars_prompt:
     - name: number
-      prompt: "Eneter a number"
+      prompt: "Enter a number"
       private: no
   tasks:
+    # - name: print multiplication table
+    #   debug:
+    #     msg: "{{ number }} * {{ item }} = {{ number | int * item}}"
+    #   loop: "{{ range(1, 11) }}"
     - name: print multiplication table
       debug:
-        msg: "{{ number }} * {{ item }} = {{ number | int * item | int }}"
-      loop: "{{ range(1, number | int + 1) }}"
+        msg: >-
+          {% set rows = [] %}
+          {% for i in range(1,11) %}
+          {% set _ = rows.append(number ~ "*" ~ i ~ "=" ~ (number | int * i)) %}
+          {% endfor %}
+          {{ rows }}
