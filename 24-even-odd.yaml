@@ -1,0 +1,18 @@
+- name: print even and odd numbers
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: number
+      prompt: "Enter a number"
+      private: no
+  tasks:
+    - name: print even numbers
+      debug:
+        msg: "{{ item }} is even"
+      loop: "{{ range(1, number | int + 1) }}"
+      when: item % 2 == 0
+    - name: print odd numbers
+      debug:
+        msg: "{{ item }} is odd"
+      loop: "{{ range(1, number | int + 1) }}"
+      when: item % 2 != 0
