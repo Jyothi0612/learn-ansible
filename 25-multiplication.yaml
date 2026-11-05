@@ -1,0 +1,11 @@
+- name: print multiplication table
+  hosts: local
+  connection: local
+  vars_promot:
+    - name: number
+      prompt: "Eneter a number"
+      private: no
+  tasks:
+    - name: print multiplication table
+      debug:
+        msg: "{{ number }} * {{ item }} = {{ number | int * item | int }}"
