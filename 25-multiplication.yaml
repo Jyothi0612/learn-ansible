@@ -13,8 +13,8 @@
     - name: print multiplication table
       debug:
         msg: >-
-          {% set rows = [] %}
-          {% for i in range(1,11) %}
-          {% set _ = rows.append(number ~ "*" ~ i ~ "=" ~ (number | int * i)) %}
-          {% endfor %}
-          {{ rows }}
+          {%- set rows = [] -%}
+          {%- for i in range(1,11) -%}
+          {%- set _ = rows.append(number ~ "*" ~ i ~ "=" ~ (number | int * i)) -%}
+          {%- endfor -%}
+          {{ rows | join('\n') }}
